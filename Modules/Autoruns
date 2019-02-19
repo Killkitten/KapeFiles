@@ -1,0 +1,12 @@
+Description: Autoruns
+Category: Auto-starting location
+Author: Marie BOSC
+Version: 1
+Id: 9c4973d2-a516-4b89-8375-9683b230b1e1
+ExportFormat: csv
+Processors:
+    -
+        Executable: autorunsc.exe
+        CommandLine: /accepteula -a * -c
+        ExportFormat: csv
+ExportFile: system_autorun.csv
