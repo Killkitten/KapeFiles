@@ -1,0 +1,12 @@
+Description: WMIC process
+Category: ProgramExecution
+Author: Marie BOSC
+Version: 1
+Id: 42c0eb4f-aef0-4a46-864b-032fd81ac14a
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\wbem\wmic.exe
+        CommandLine: process list brief
+        ExportFormat: txt
+        ExportFile: process_list.txt

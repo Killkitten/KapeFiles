@@ -1,0 +1,12 @@
+Description: WMIC startup
+Category: Auto-starting location
+Author: Marie BOSC
+Version: 1
+Id: 36afb777-8ba7-4d37-8a1a-774c40c2508f
+ExportFormat: txt
+Processors:
+    -
+        Executable: C:\Windows\System32\wbem\wmic.exe
+        CommandLine: startup list full
+        ExportFormat: txt
+        ExportFile: wmic_startup_list.txt
