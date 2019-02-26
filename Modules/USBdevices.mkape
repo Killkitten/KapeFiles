@@ -1,0 +1,22 @@
+Description: 'View any installed/connected USB devices in your system'
+Category: USB devices
+Author: Marie BOSC
+Version: 1
+Id: 640db024-acdf-42a8-a99e-ef3d2a525862
+ExportFormat: html
+Processors:
+    -
+        Executable: USBDeview.exe 
+        CommandLine: /stext 
+        ExportFormat: txt
+        ExportFile: USBDevices.txt
+    -
+        Executable: USBDeview.exe
+        CommandLine: /shtml
+        ExportFormat: html
+        ExportFile: USBDevices.html		
+    -
+        Executable: USBDeview.exe
+        CommandLine: /scomma
+        ExportFormat: csv
+        ExportFile: USBDevices.csv
